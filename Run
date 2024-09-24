@@ -1,0 +1,40 @@
+1- Install Choco 
+
+Open Powershell as Administrator and run following:
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; 
+[System.Net.ServicePointManager]::SecurityProtocol
+= [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex
+((New-Object System.Net.WebClient).DownloadString
+('https://chocolatey.org/install.ps1'))
+
+2- Install following pre-reqs 
+
+choco install python --version=3.10.0
+choco install git
+choco install ffmpeg
+
+3- Install Visual Studio from 
+https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+4- git clone https://github.com/Hillobar/Rope
+
+5-  cd Rope
+
+6- create the virtual environment
+python -m venv venv
+
+7- activate the local venv
+.\venv\Scripts\activate
+
+8- check if you have installed the correct python version (Python 3.10.X)
+python --version
+
+9- install the dependencies for Rope
+.\venv\Scripts\pip.exe install -r .\requirements.txt
+
+10- copy all the files from this page under Assets , 
+https://github.com/Hillobar/Rope/releases/tag/Sapphire 
+and save them in Rope\Models folder
+
+11- Run .\Rope.bat
