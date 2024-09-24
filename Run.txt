@@ -37,4 +37,4 @@ python --version
 https://github.com/Hillobar/Rope/releases/tag/Sapphire 
 and save them in Rope\Models folder
 
-11- Run .\Rope.bat
+11- Run> .\Rope.bat
